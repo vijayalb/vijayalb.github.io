@@ -14,7 +14,9 @@
 	<!-- Custom Style -->
 	<link href="css/style.css" rel="stylesheet">
     <style>
-        @media (max-width: 740px) {
+        @media (min-width: 767px) {
+		
+		
             .full-height,
             .full-height body,
             .full-height header,
@@ -28,7 +30,7 @@
     <!--Navigation & Intro-->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark black fixed-top scrolling-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top scrolling-navbar" style="background-color: transparent" >
             <div class="container">
                 <a class="navbar-brand" href="#">VB</a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +54,7 @@
                             <a class="nav-link" href="#skills" data-offset="100">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-offset="100">Projects</a>
+                            <a class="nav-link" href="#Projects" data-offset="100">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#testimonials" data-offset="100">Testimonials</a>
@@ -61,23 +63,14 @@
                             <a class="nav-link" href="#contact" data-offset="100">Contact</a>
                         </li>
                     </ul>
-                    <!-- Social Icon  -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/IAmVijayalakshmiBalakrishnan" class="nav-link"><i class="fa fa-facebook light-green-text-2"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.instagram.com/_v.g._/" class="nav-link"><i class="fa fa-instagram light-green-text-2"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
-        <!-- Intro Section -->>
-		<div id="home" class="view hm-black-slight jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://s3-us-west-2.amazonaws.com/mybucket006/PSX_20171111_202439.jpg');">
+        <!-- Intro Section -->
+		<div id="home" class="view hm-black-slight jarallax bgwb" data-jarallax='{"speed": 0.2}' style="background-image: url('https://s3-us-west-2.amazonaws.com/mybucket006/BG.jpg');">
 		    <div class="full-bg-img flex-center">
 		        <div class="container">
-                    <div class="jumbotron">
+                    <div>
                         <div class="white-text text-center">
                                 <h3 class="display-5 mb-4 dark-white-text wow fadeIn"><strong><br/>VIJAYALAKSHMI BALAKRISHNAN</strong></h3>
                                 <h6 class="font-bold wow fadeIn" data-wow-delay="0.4s">Software/Web/Mobile App Developer</h6>
@@ -96,12 +89,15 @@
             <!-- First section -->
             <section id="about" class="section feature-box pt-3 pb-4"><br/><br/>
                 <!--Secion heading-->
-                <h1 class="text-center font-up font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">About Me</h1>
+                            <h2 class="textual text-center font-bold my-4 pt-5 wow fadeIn" data-wow-delay="0.2s">About Me</h2>
+            <hr class="between-sections"><br/>
                 <!--Section description-->
-                <p class="text-center  font-up font-bold  wow fadeIn" data-wow-delay="0.2s">What i do</p>
-                <div class="line  wow fadeIn" data-wow-delay="0.2s"></div>
+				<p class="text-center   font-bold fontcap  wow fadeIn" data-wow-delay="0.2s"><strong>Who am I</strong></p><br/>
+				<blockquote class="wow  fontme  fadeIn" data-wow-delay="0.2s">I am a passionate programmer, spend about twelve to thirteen hours in front of computer screen as I am coding, debugging, reading tech stories and learning new skills. When I am not programming, i love doing photography and do-it-yourself projects.</blockquote>
+				<br/>
+                <p class="text-center font-bold fontcap wow fadeIn" data-wow-delay="0.2s"><strong>What I do</strong></p>
                 <!--First row-->
-                <div class="row my-5 pt-4 wow fadeIn" data-wow-delay="0.2s">
+                <div class="row my-5 wow fadeIn" data-wow-delay="0.2s">
                     <div class="col-lg-3 col-md-6 text-center pt-4">
                         <div class="icon-area">
                             <div class="circle-icon">
@@ -109,7 +105,7 @@
                             </div>
                             <br>
                             <strong>Web Development</strong>
-                            <p>Developed few projects using JavaScript, PHP, JQuery.</p>
+                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center pt-4">
@@ -119,7 +115,7 @@
                             </div>
                             <br>
                             <strong>Software Development</strong>
-                            <p>Built various java and python based projects. I have also implemented few software design patterns.</p>
+                            
                         </div>
                     </div>   
                     <div class="col-lg-3 col-md-6 text-center pt-4">
@@ -129,7 +125,7 @@
                             </div>
                             <br>
                             <strong>Mobile App Development</strong>
-                            <p>Developed android applications which uses various APIs and other functionalities.</p>
+                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center pt-4">
@@ -139,7 +135,7 @@
                             </div>
                             <br>
                             <strong>Data Analysis</strong>
-                            <p>Performed analysis on a large data set, implemented hadoop map reduce and visualized the final outcome.</p><br/>
+                            
                         </div>
                     </div>
                 </div>
@@ -153,14 +149,15 @@
             <div class="container py-4 pt-4">    
             <!-- Second section -->
             <section id="educationandexperience">
-                <h1 class="text-center font-up font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Education and Experience</h1>
+                            <h2 class="textual text-center font-bold my-4 pt-5 wow fadeIn" data-wow-delay="0.2s">Education and Experience</h2>
+            <hr class="between-sections">
                 <!-- First row -->
                 <div class="row py-5">
                     <!--First column-->
                     <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
                     <!--Section heading-->
                         <div class="d-flex justify-content-start">
-                            <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">My <strong>Education</strong></h4>
+                            <h4 class="text-center textual mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">My <strong>Education</strong></h4>
                         </div><br/>
                         <!--Description-->
                         <blockquote class="blockquote bq-warning mb-4">
@@ -184,7 +181,7 @@
                     <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
                     <!--Section heading-->
                         <div class="d-flex justify-content-start">
-                            <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">My <strong>Experience</strong></h4>
+                            <h4 class="text-center textual mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">My <strong>Experience</strong></h4>
                         </div>
                         <!--Description-->
                         <blockquote class="blockquote bq-warning mb-4">
@@ -216,247 +213,531 @@
             <section id="skills" class="section feature-box mb-5">
                 
                 <div class="container py-4 pt-4">
-                    <h1 class="text-center font-up font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Skills</h1><br/>
+                                <h2 class=" text-center textual font-bold my-4 pt-5 wow fadeIn" data-wow-delay="0.2s">Skills</h2>
+            <hr class="between-sections">
             <!-- Second section -->
-            <section id="skills">
-                <!-- First row -->
-                <div class="row py-6">
-                    <!--First column-->
-                    <div class="col-lg-4 offset-lg-1 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
-                    <!--Second heading-->
-                    <div class="d-flex justify-content-start">
-                        <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Database & Cloud <strong>Skills</strong></h4>
-                    </div>
-                        <!--Description-->
-                        <p class="black-text font-bold" align="justify">Amazon Web Services</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Azure</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Google App Engine</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">MySQL</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">MongoDB</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">PostgreSQL</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                    </div>
-                    <!--/First column-->
-                    <!--Second column-->
-                    <div class="col-lg-4 offset-lg-1 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
-                    <!--Second heading-->
-                    <div class="d-flex justify-content-start">
-                        <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Language <strong>Skills</strong></h4>
-                    </div>
-                        <!--Description-->
-                        <p class="black-text font-bold" align="justify">Java</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Python</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Java Script</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">C++</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">PHP</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">SQL</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>                            
-                    </div>
-                    <!--/Second column-->
-                    <!--Third column-->
-                    <div class="col-lg-4 offset-lg-1 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s">
-                    <!--Second heading-->
-                    <div class="d-flex justify-content-start">
-                        <h4 class="text-center font-up mb-5 pb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Framework <strong>Skills</strong></h4>
-                    </div>
-                        <!--Description-->
-                        <p class="black-text font-bold" align="justify">Flask</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Django</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Spring and Hibernate</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>                            
-                        <p class="black-text font-bold pt-3" align="justify">Angular JS</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">Bootstrap</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p class="black-text font-bold pt-3" align="justify">JQuery</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <!--/Third column-->
-                    </div>
-                    <!--/First row-->
-                </section>
-                <!-- /.Second section -->
+            <br/><br/>
+
+        <!--Grid row-->
+        <div class="row features-big">
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/java.png" alt="gulp logo" class="mb-3" style="height: 40px;">
+                <h6 class="h6">Java</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/aws.png" alt="material design for bootstrap logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">AWS</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/mongo.png" alt="html logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">MongoDB</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/mysql.png" alt="css logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">MySQL</h6>
+            </div>
+            <!--Grid column-->
+			
+			            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/azure.png" alt="html logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Azure</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/google.png" alt="css logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Google App Engine</h6>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row features-big">
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/jquery.png" alt="sass logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">JQuery</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/js.png" alt="javascript logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">JavaScript</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/angular.png" alt="terminal logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Angular JS</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/flask.png" alt="sass logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Flask</h6>
+            </div>
+            <!--Grid column-->
+			
+			            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/django.png" alt="html logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Django</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/python.png" alt="css logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Python</h6>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row features-big">
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/hadoop.png" alt="npm logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Hadoop</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/git.png" alt="git logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Git</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/php.png" alt="php logo" class="mb-1" style="height: 55px;">
+                <h6 class="h6">PHP</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/andro.png" alt="web design logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">Android</h6>
+            </div>
+            <!--Grid column-->
+			
+			            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/html.png" alt="html logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">HTML</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-3 col-xs-4 mb-r text-center wow fadeInUp  hvr-grow hvr-grow:active">
+                <img src="https://s3-us-west-2.amazonaws.com/mybucket006/css.png" alt="css logo" class="mb-3" style="height: 45px;">
+                <h6 class="h6">CSS</h6>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
             </div>
             </section>
             <!-- /.Second section -->
         </div>
         <!-- /.Third container -->
         <!-- Streak -->
-        <div class="streak streak-photo streak-md hm-indigo-strong" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20%2811%29.jpg')">
+        <div class="streak streak-photo streak-md hm-indigo-strong bgwb" style="background-image:url('https://s3-us-west-2.amazonaws.com/mybucket006/matrix.jpg')">
             <div class="mask pattern-1 flex-center">
                 <div class="white-text smooth-scroll">
-                    <h2 class="h2-responsive wow fadeIn mb-5"><i class="fa fa-quote-left" aria-hidden="true"></i> Design is not just what it looks like and feels like. Design is how it works. <i class="fa fa-quote-right" aria-hidden="true"></i></h2>
-                    <h5 class="text-center font-italic wow fadeIn" data-wow-delay="0.2s">~ Steve Jobs</h5>
+                    <h2 class="h2-responsive wow fadeIn mb-5"><i class="fa fa-quote-left" aria-hidden="true"></i> Controlling Complexity is the Essence of Computer Programming. <i class="fa fa-quote-right" aria-hidden="true"></i></h2>
+                    <h5 class="text-center textual font-italic wow fadeIn" data-wow-delay="0.2s">~ Brian Kernighan</h5>
                 </div>
             </div>
         </div>
         <!-- /.Streak -->
-        <!-- Fourth container -->
-        <div class="container">
-            <!-- Fourth section -->
-            <section id="projects" class="section mb-1 feature-box mb-1">
-                <!-- Section title -->
-                <h1 class="text-center font-up font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Projects</h1><br/>
-                <!-- First row -->
-                <div class="row features-big wow fadeIn" data-wow-delay="0.4s">    
-                    <!-- First column -->
-                    <div class="col-md-4">
-                        <!--Panel-->
-                        <div class="card card-cascade">
-                            <div class="view gradient-card-header juicy-peach-gradient">
-                            <h2 class="h2-responsive">Big Data Analysis</h2>
-                            <p>Python, Hadoop MapReduce, D3js, AWS EC2, RDS, Memcache</p>
+		    <!--Projects section v.2-->
+    <section id="Projects" class="section mt-2 pb-5 mb-4">
+      <div class="container">
+        <!--Section heading-->
+        <div class="row mt-4">
+          <div class="col-md-12 ">
+            <h2 class="textual text-center font-bold my-4 pt-5 wow fadeIn" data-wow-delay="0.2s">My Projects</h2>
+            <hr class="between-sections">
+          </div>
+        </div>
+      
+      <!--First row-->
+      <div class="row" >
+        <!--First column-->
+        <div class="col-md-12 wow fadeIn" data-wow-delay="0.4s" >
+          <!-- Nav tabs -->
+          <ul class="nav md-pills flex-center flex-wrap mx-0" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active font-bold" data-toggle="tab" href="#panel31" role="tab">
+                <br><strong>Java</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" data-toggle="tab" href="#panel32" role="tab">
+                <br><strong>Cloud</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" data-toggle="tab" href="#panel33" role="tab">
+                <br><strong>Web</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-bold" data-toggle="tab" href="#panel34" role="tab">
+                <br><strong>Android</strong></a>
+            </li>
+          </ul>
+        </div>
+        <!--Tab panels-->
+        <div class="tab-content">
+          <!--Panel 1-->
+          <div class="tab-pane fade show in active" id="panel31" role="tabpanel">
+            <br>
+            <!--First row-->
+            <div class="row ml-5 mr-5 mt-2">
+               <!-- First column -->
+                        <div class="col-md-6 mb-r text-center">
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Ring Coordinator Algorithm</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Datagram Sockets.</p>
+                                <p class="grey-text font-small mx-4">Used sockets for inter-process communication - All Processes start up correctly - We can crash the coordinator communication - Whenever coordinator is crashed other processes can initiate the communication - Correct process is elected as the coordinator - Correct messages and tokens are show while transmitting messages between process - Multiple processes can initiate the election at the same time.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/RingCoordinatorAlgorithm">GitHub Link</a>
+                                    </p>
+                                </p>
                             </div>
-                            <div class="card-body text-center">
-                            <p class="card-text">Analyzed over 400k tuples of public data set. Map-reduced dataset with more than 3 mappers and reducers.
-                                Visualized the outcome using D3js. Plotted the data set using SVG and canvas elements.</p>
-                            </div>
+                            <!--/.Panel-->
+
                         </div>
-                    </div>
-                    <!-- /First column -->   
-                    <!-- Second column -->
-                    <div class="col-md-4">
-                        <!--Panel-->
-                        <div class="card card-cascade">
-                            <div class="view gradient-card-header warm-flame-gradient">
-                            <h2 class="h2-responsive">Webstagram</h2>
-                            <p>Python, MongoDB, ELB, AWS Auto Scaling, jMeter</p>
+                        <!-- /First column -->
+              <!--Second column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Requirements Generator</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Design Patters, AWT and Swing, NLP Tagger</p>
+                                <p class="grey-text font-small mx-4">JAVA application which takes project description as input from the user and generates Software Requirements - The tool allows the user to import the input from any text file (.txt, .doc, .docx) - Highlights verb-noun phrases automatically using Stanford NLP Tagger and exports the generated requirements document into PDF format - Implemented Singleton, Bridge, Creator, Expert and Controller Design Patterns</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/Requirements_Generator_Tool">GitHub Link</a>
+                                    </p>
+                                </p>
                             </div>
-                            <div class="card-body text-center">
-                            <p class="card-text">Built a website which supports user login, image upload, list images, comment on photos.
-                                Website auto scales if it reaches more than 500 users at a same time to another EC2 instance.
-                                Performed jMeter load testing on the website and scaled according to the test result.
-                            </p>
-                            </div>
+                            <!--/.Panel-->
+
                         </div>
-                    </div>
-                    <!-- /.Second column -->
-                    <!-- Third column -->
-                    <div class="col-md-4">
-                        <div class="card card-cascade">
-                            <div class="view gradient-card-header spring-warmth-gradient">
-                                <h2 class="h2-responsive">Savior</h2>
-                                <p>Java, Android Studio, Firebase, Contacts API, Location API</p>
+              <!--/Second column-->
+              <!--Third column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>File Transfer Protocol</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Multithreading, AWS EC2</p>
+                                <p class="grey-text font-small mx-4">The Client and Server uses Multithreading for file transfer services - Each client can communicate with multiple Server threads and each server can service multiple Client threads. Implemented various standards: TYPE, MODE, STRUCTURE, RETR, STOR, LIST, QUIT, DELETE - The Server has been hosted on AWS EC2 - User authentication using the telnet protocol - Swing components used for better GUI.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/FileTransferImplementation">GitHub Link</a>
+                                    </p>
+                                </p>
                             </div>
-                            <div class="card-body text-center">
-                                <p class="card-text">One tap solution during an emergency. Sends location link when there is no cellular network or Wi-Fi connection and emergency messages to pre-selected family members.
-                                Login and contact backup made available using firebase.</p>
-                            </div>
-                        </div>                   
-                    </div>
-                    <!-- /.Third column -->
-                </div>
-                <!-- /.First row -->  
-                <br/>              
-                <!-- Second row -->
-                <div class="row features-big wow fadeIn" data-wow-delay="0.4s">    
-                    <!-- First column -->
-                    <div class="col-md-4">
-                        <!--Panel-->
-                        <div class="card card-cascade">
-                            <div class="view gradient-card-header rainy-ashville-gradient">
-                            <h2 class="h2-responsive">Requirements Generator</h2>
-                            <p>Java, Design Patterns, AWT and Swing, NLP Tagger</p>
-                            </div>
-                            <div class="card-body text-center">
-                            <p class="card-text">Generates requirements by identifying verbs and noun phrases from the project description.
-                                Sorts the requirements based on their priorities. Supports addition, deletion of business requirements with save and export option.
-                                Applied command, bridge, factory, controller and expert patterns.</p>
-                            </div>
+                            <!--/.Panel-->
+
                         </div>
-                    </div>
-                    <!-- /First column -->   
-                    <!-- Second column -->
-                    <div class="col-md-4">
-                        <!--Panel-->
-                        <div class="card card-cascade">
-                            <div class="view gradient-card-header amy-crisp-gradient">
-                            <h2 class="h2-responsive">File Transfer Application</h2>
-                            <p>Java, AWT and Swing, Multithreading</p><br/>
+              <!--/Third column-->
+              <!--Fourth column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Chat World</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Socket Communication, Multithreading</p>
+                                <p class="grey-text font-small mx-4">Each client process to connect to server over socket communication - Connects two clients at the same time with different traffic - If one client of a connected set logs off, dies or becomes disconnected the other client will be notified - Server is multithreaded such a way that each connection is handled by different threads - Database of all the users who are active is maintained.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/Instant_Messenger">GitHub Link</a>
+                                    </p>
+                                </p>
                             </div>
-                            <div class="card-body text-center">
-                            <p class="card-text">It is a Client - Server based application supporting file transfer. Created separate threads for each client connections.
-                                A  Control thread is used for managing the transmissions. Functionalities provided: Upload, download, cancel, status, quit.
-                            </p>
-                            </div>
+                            <!--/.Panel-->
+
                         </div>
-                    </div>
-                    <!-- /.Second column -->
-                    <!-- Third column -->
-                    <div class="col-md-4">
-                        <div class="card card-cascade">
-                            <div class="view gradient-card-header mean-fruit-gradient">
-                                <h2 class="h2-responsive">Real Estate Analyzer</h2>
-                                <p>JavaScript, PHP, Google Maps API, Zillow Web Services</p>
+              <!--/Fourth column-->
+            </div>
+            <!--/First row-->
+            
+          </div>
+          <!--/.Panel 1-->
+          <!--Panel 2-->
+          <div class="tab-pane fade" id="panel32" role="tabpanel">
+            <br>
+            <!--First row-->
+            <div class="row ml-5 mr-5 mt-2">
+			<!--First Column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Webstagram</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Python, Flask, Mongo DB, Jinja2, Bootstrap, JMeter, Application Scaling, Google App Engine</p>
+                                <p class="grey-text font-small mx-4">A website which supports user login, image upload, list images, comment on photos - Auto scaling is implemented if it reaches more than 500 users at a same time - Performed jMeter load testing on the website and scaled accordingly.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/Webstagram">GitHub Link</a>
+                                    </p>
+                                </p>
                             </div>
-                            <div class="card-body text-center">
-                                <p class="card-text">Developed a website which displays the google maps where the clients can pin a marker on an apartment to get the price listings.
-                                    Used the GetSearchResults API and displayed the full address, estimate and other details.</p>
+                            <!--/.Panel-->
+
+                        </div>
+        <!--/First column-->
+              <!--Second column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Hadoop Map Reduce - AWS</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Apache Hadoop, Map Reduce, Python, Flask, Amazon AWS, EC2, ELB, D3Js</p>
+                                <p class="grey-text font-small mx-4">Analyzed over 400k tuples of public data set using Hadoop cluster in AWS - Map-reduced dataset with more than 3 mappers and reducers - Visualized the outcome using D3js - Plotted the data set using SVG and canvas elements.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/AWS_Hadoop_MapReduce">GitHub Link</a>
+                                    </p>
+                                </p>
                             </div>
-                        </div>                   
-                    </div>
-                    <!-- /.Third column -->
-                </div>
-                <!-- /.Second row -->
-            </section>
-            <!-- /.Fourth section -->            
-        </div><br/><br/>
-        <!-- /.Fourth container --> 
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Second column-->
+              <!--Third column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>IBM Cloud Encryption</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Python, Flask, MySQL, HTML, IBM Object storage, RESTful Web Services</p>
+                                <p class="grey-text font-small mx-4">Users can store encrypted files (hashing file contents using MD5) in Bluemix Object storage - Other operations of the application include deleting, searching files using keywords, file separation using extensions.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/IBM_Cloud_Encryption">GitHub Link</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Third column-->
+              <!--Fourth column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>AWS - RDS/Memcache</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Python, Flask, Amazon AWS RDS, EC2, ELB, Elastic cache for Memcached</p>
+                                <p class="grey-text font-small mx-4">A web application hosted in AWS EC2 which enables user to provide a query and key (for memcache) - Compared the performance between RDS and using ElastiCache - 1 to 50000 queries were executed using RDS and Memcache and the results on time taken is noted.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/AWS_RDS_Memcache">GitHub Link</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Fourth column-->
+            </div>
+            <!--/First row-->
+          </div>
+          <!--/.Panel 2-->
+          <!--Panel 3-->
+          <div class="tab-pane fade" id="panel33" role="tabpanel">
+            <br>
+            <!--First row-->
+            <div class="row ml-5 mr-5 mt-2">
+			<!--First Column-->
+             <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Real Estate Analyzer</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Google Maps API, Zillow API, Reverse Geocoding, JavaScript</p>
+                                <p class="grey-text font-small mx-4">Developed a website which displays the google maps where the clients can pin a marker on an apartment to get the price listings. Used the GetSearchResults API and displayed the full address and its estimate.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/RealEstateAnalyser">GitHub Link</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+        <!--/First column-->
+              <!--Second column-->
+              <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Photo Album Dropbox</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Dropbox API, XAMPP, PHP Scripting</p>
+                                <p class="grey-text font-small mx-4">Photo Album application for user to upload, download, delete images - Users can comment on other photos and like their pictures - Used Dropbox API as the cloud storage for the images that are uploaded - The website is also stress tested for load balancing.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/Photo_Album_DropboxAPI">GitHub Link</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Second column-->
+              <!--Third column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Message Quorum</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: MySQL, Apache Web Server, XAMPP, PHP Scripting</p>
+                                <p class="grey-text font-small mx-4">Developed a website where registered users can post messages and get comments from others - User can create a separate message board for different discussion or topics - This application is implemented using the relational databasae system (MySql).</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/Message_Forum">GitHub Link</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Third column-->
+              <!--Fourth column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>E-Commerce Ebay</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Ebay ECN API, PHP Session Scripting </p>
+                                <p class="grey-text font-small mx-4">Developed an e-commerce shopping site where users can buy various products - They can select the product by searching and add it to cart which is managed by a session - Each product contains a link productOffersURL which gives a detailed description of the product and a list of best offers from various sellers.</p>
+                                    <p class="font-small font-bold indigo-text mx-4 mb-0">
+                                        <a href="https://github.com/vijayalb/E-Commerce_App">GitHub Link</a>
+                                    </p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Fourth column-->
+              <!--/First row-->
+            </div>
+          </div>
+          <!--/.Panel 3-->
+          <!--Panel 4-->
+          <div class="tab-pane fade" id="panel34" role="tabpanel">
+            <br>
+            <!--First row-->
+            <div class="row ml-5 mr-5 mt-2">
+              <!--First column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Savior</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Firebase DB, Contacts API, Google Maps API </p>
+                                <p class="grey-text font-small mx-4">SOS Android application focussed on creating a one tap solution to send SMS and location as an emergency measure to the user’s family member(s). Using Android Studio as the IDE, the development was facilitated on API 23 that also incorporated Firebase to provide user authentication.</p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/First column-->
+              <!--Second column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>AlertME</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Firebase DB, Agile Methodologies</p>
+                                <p class="grey-text font-small mx-4">Android Mobile application - "a one touch solution" which helps professor to send alerts to both students and teaching assistant regarding class cancellation, academic remainders, etc.</p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Second column-->
+              <!--Third column-->
+               <div class="col-md-6 mb-r text-center">
+
+                            <!--Panel-->
+                            <div class="card card-body text-left white hoverable">
+                                <p class="feature-title title font-bold dark-grey-text  spacing mt-4 mx-4">
+                                    <strong>Bluetooth Chat</strong>
+                                </p>
+								<p class="grey-text font-bold mx-4"> Key Features: Android Bluetooth API</p>
+                                <p class="grey-text font-small mx-4">This application scans for other Bluetooth devices and queries the local Bluetooth adapter for pairing devices - Established RFCOMM channels/sockets and transfers the messages over bluetooth.</p>
+                                </p>
+                            </div>
+                            <!--/.Panel-->
+
+                        </div>
+              <!--/Third column-->
+            </div>
+            <!--/First row-->
+          </div>
+        </div>
+        <!--/.Panel 4-->
+      </div>
+      <!--/Tab panels-->
+    </section>
+    <!--/Projects section v.2-->
+	</div>
         <!--Fifth container-->
         <div class="container-fluid" style="background-color: #f3f3f5;">
         <div class="container py-5">
             <!--Section: Testimonials v.2-->
             <section id="testimonials" class="section mb-5">
                 <!--Section heading-->
-                <h1 class="text-center font-up font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Testimonials</h1><br/>
+                <h2 class="text-center textual font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Testimonials</h2><br/>
                 <!--Carousel Wrapper-->
                 <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide wow fadeIn carousel-fade" data-ride="carousel" data-interval="false">
                     <!--Slides-->
@@ -480,7 +761,7 @@
                                     <i class="fa fa-star"> </i>
                                     <i class="fa fa-star"> </i>
                                     <i class="fa fa-star"> </i>
-                                    <i class="fa fa-star-half-full"> </i>
+                                    <i class="fa fa-star"> </i>
                                 </div>
                             </div>
                         </div>
@@ -499,7 +780,7 @@
                                 assigned by the leadership on time and without errors and also she had a positive attitude when dealing with both her superiors and her peers.</p><br/><br/><br/>
                                 <div class="mt-1">
                                 <h5><strong>Praveen S</strong></h5>
-                                <p><b>Senior Operations Manager, Kindle Selection Growth and Experience</b></p>
+                                <p><b>Senior Operations Manager, Kindle Selection Growth and Experience at Amazon.com</b></p>
                                 </div>                                
                                 <!--Review-->
                                 <div class="yellow-text">
@@ -523,7 +804,7 @@
                                 <p><i class="fa fa-quote-left"></i> I would like to recommend Vijayalakshmi Balakrishnan as a candidate for a position with your organization. In her position as an Associate, Vijayalakshmi was employed in our office from 2014 - 2016. Throughout her time with our organization, she demonstrated critical skills that would make her an excellent employee at your company. She did a terrific job in her position and was an asset to our organization during her tenure with the office. Vijayalakshmi's technical knowledge helped in diagonising various issues and perform data manipulation tasks. She has excellent written and verbal communication skills, is extremely organized, can work independently, and is able to effectively multi-task to ensure that all projects are completed in a timely manner. Because of her effectiveness, I even gave her additional responsibilities, including a training program for our interns. She went above and beyond in that assignment, as she does in all tasks.</p><br/><br/><br/>                                
                                 <div class="mt-1">
                                 <h5><strong>Joy Vijayan</strong></h5>
-                                <p><b>Operations Manager, Kindle Selection Growth and Experience.</b></p>
+                                <p><b>Operations Manager, Kindle Selection Growth and Experience at Amazon.com</b></p>
                                 </div>                                    
                                 <!--Review-->
                                 <div class="yellow-text">
@@ -560,9 +841,9 @@
             <!-- Contact -->
             <section id="contact" class="section mb-4">
                 <!--Section heading-->
-                <h1 class="text-center font-up font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Contact</h1>
+                <h2 class="text-center textual font-bold  mt-5 mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Contact</h2>
                 <!--Section description-->
-                <p class="text-center  font-up font-bold  wow fadeIn" data-wow-delay="0.2s">If you are interested in working with me</p><br/><br/>
+                <p class="text-center   font-bold  wow fadeIn" data-wow-delay="0.2s">If you are interested in working with me</p><br/><br/>
                     <!--Second column-->
                     <div class="col-md-12">
                         <ul class="contact-icons">
@@ -603,12 +884,8 @@
                 <!--First column-->
                 <div class="col-md-12 mt-1 wow fadeIn" data-wow-delay="0.3s">
                     <div class="footer-socials flex-center">
-                        <!--Facebook-->
-                        <a href="https://www.facebook.com/IAmVijayalakshmiBalakrishnan" type="button" class="btn-floating btn-secondary"><i class="fa fa-facebook"></i></a>
                         <!--Google +-->
                         <a href="https://plus.google.com/u/0/113478199333505438893" type="button" class="btn-floating btn-secondary"><i class="fa fa-google-plus"></i></a>
-                        <!--Instagram-->
-                        <a href="https://www.instagram.com/_v.g._/" type="button" class="btn-floating btn-secondary"><i class="fa fa-instagram"></i></a>
                         <!--Github-->
                         <a href="https://github.com/vijayalb" type="button" class="btn-floating btn-secondary"><i class="fa fa-github"></i></a>                        
                         <!--Liinkedin-->
@@ -633,8 +910,9 @@
     <!--/Footer-->
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -654,6 +932,12 @@
         $('.navbar-collapse a').click(function(){
             $(".navbar-collapse").collapse('hide');
         });
+		$(function () {
+		$(document).scroll(function () {
+		var $nav = $(".navbar-fixed-top");
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+		});
+		});
         /* WOW.js init */
         new WOW().init();
     </script>
