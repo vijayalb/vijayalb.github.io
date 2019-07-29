@@ -61,3 +61,6 @@
 .near-moon-gradient {
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
+.bg-height {
+    height: 0%
+}
